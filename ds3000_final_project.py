@@ -241,8 +241,6 @@ best_model = model_scores[best_model_name]['model']
 
 print(f"The best model is: {best_model_name} with accuracy: {model_scores[best_model_name]['accuracy']:.4f}")
 
-"""Use best model to make some motherfucking predictions"""
-
 # Make predictions with the best model
 if best_model_name == 'XGBoost':
     y_test_pred = best_model.predict(dtest)  # Use XGBoost's predict method
